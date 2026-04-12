@@ -1,6 +1,6 @@
-# 🌙 Sruti | A Digital Sanctuary of Words
+# 🌙 Sruti's Blog | A Digital Sanctuary of Words
 
-> "Not everything is meant to be loud. Some things are meant to be felt."
+> A soft corner of the internet where words rest, breathe, and become something more
 
 🔗 **Live Site:** https://blog-g9xh.vercel.app/  
 💻 **Repository:** https://github.com/srutinadar26/Blog  
@@ -11,9 +11,9 @@
 
 This is not just a blog.
 
-It is a quiet corner of the internet where I document my thoughts, emotions, and creativity through poetry and reflective writing.
+This is my personal digital sanctuary a space where I express myself through poetry, reflections, and creative writing
 
-Built as a personal space, this project represents who I am beyond code — a blend of logic and literature, structure and soul.
+Built not just as a project, but as a living archive of my thoughts, emotions, and imagination, this blog represents who I am beyond academics and code.
 
 ---
 
@@ -24,32 +24,16 @@ Built as a personal space, this project represents who I am beyond code — a bl
 - 📖 **Literary pieces** — inspired by books, life, and silence  
 - 🌙 **Aesthetic experience** — calm, minimal, immersive  
 
-This isn't content. It's expression.
-
 ---
 
 ## ⚙️ Tech Stack
 
-Behind the softness, there's solid engineering:
-
 - **Framework:** Next.js (App Router)
-- **Language:** TypeScript  
+- **Language:** TypeScript
 - **Styling:** Tailwind CSS + custom typography  
 - **Database:** PostgreSQL  
 - **Deployment:** Vercel  
-- **Analytics:** Vercel Web Analytics  
-
----
-
-## 🎨 Design Philosophy
-
-Every element here is intentional.
-
-- Minimal, not empty  
-- Elegant, not loud  
-- Emotional, not overwhelming  
-
-Typography, spacing, and colors are designed to make reading feel like an experience, not just scrolling.
+- **Backend:** Supabase  
 
 ---
 
@@ -70,4 +54,7 @@ This is a personal blog, but I welcome thoughtful feedback and suggestions.
 
 ---
 
-**Made with 🤍 by Sruti**
+## 💫 A Small Thought
+
+“Somewhere between code and कविता, I found myself”
+
