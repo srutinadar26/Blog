@@ -1,85 +1,60 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
+/* Custom variant for dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* Premium Literary Color Palette - Warm Beige & Soft Gold */
-  --background: #fdf6e3; /* warm beige */
-  --foreground: #222222; /* deep charcoal */
-  --card: #fffaf3; /* soft ivory */
-  --card-foreground: #222222;
-  --popover: #fffaf3;
-  --popover-foreground: #222222;
-  --primary: #c68f5a; /* soft gold */
-  --primary-foreground: #222222;
-  --secondary: #f5f0e6; /* warm cream */
-  --secondary-foreground: #222222;
-  --muted: #f5f0e6;
-  --muted-foreground: #6b5e53; /* muted brown-gray */
-  --accent: #c68f5a;
-  --accent-foreground: #222222;
-  --destructive: #b54a4a;
-  --destructive-foreground: #fdf6e3;
-  --border: #e8dccb; /* light warm neutral */
-  --input: #f5f0e6;
-  --ring: #c68f5a;
-  --chart-1: #c68f5a;
-  --chart-2: #d9a066;
-  --chart-3: #e8c99b;
-  --chart-4: #6b5e53;
-  --chart-5: #8b7355;
+  /* Premium Literary Color Palette - Rose & Plum (Darker Light Mode) */
+  --background: #E8D5C8;  /* darker warm rose - was #DBAFA0 */
+  --foreground: #2D121F;  /* deeper plum - was #3d1a2c */
+  --card: #F2E6DD;        /* slightly darker ivory - was #f5e6df */
+  --card-foreground: #2D121F;
+  --popover: #F2E6DD;
+  --popover-foreground: #2D121F;
+  --primary: #6B3A52;     /* deeper muted plum - was #704264 */
+  --primary-foreground: #F2E6DD;
+  --secondary: #A87C8A;   /* deeper dusty rose - was #BB8493 */
+  --secondary-foreground: #2D121F;
+  --muted: #DDD0C5;       /* darker muted tone - was #e8d5ce */
+  --muted-foreground: #5D3A48; /* deeper muted text - was #704264 */
+  --accent: #7D4A62;      /* deeper accent - was #8b5a6e */
+  --accent-foreground: #F2E6DD;
+  --destructive: #3D1A2C;  /* deeper destructive - was #49243E */
+  --destructive-foreground: #E8D5C8;
+  --border: #C9B5A8;       /* darker border - was #c9a89b */
+  --input: #F2E6DD;
+  --ring: #6B3A52;
   --radius: 0.5rem;
-  --sidebar: #fdf6e3;
-  --sidebar-foreground: #222222;
-  --sidebar-primary: #c68f5a;
-  --sidebar-primary-foreground: #222222;
-  --sidebar-accent: #f5f0e6;
-  --sidebar-accent-foreground: #222222;
-  --sidebar-border: #e8dccb;
-  --sidebar-ring: #c68f5a;
+  --radius-full: 9999px;
 }
 
 .dark {
-  /* Dark Theme - Deep Chocolate & Warm Gold */
-  --background: #3b2a1a; /* deep chocolate brown */
-  --foreground: #f5f0e6; /* warm off-white */
-  --card: #4b3621; /* coffee brown */
-  --card-foreground: #f5f0e6;
-  --popover: #4b3621;
-  --popover-foreground: #f5f0e6;
-  --primary: #d9a066; /* warm gold */
-  --primary-foreground: #3b2a1a;
-  --secondary: #5a4634; /* muted brown */
-  --secondary-foreground: #f5f0e6;
-  --muted: #5a4634;
-  --muted-foreground: #d6c6b8; /* soft beige */
-  --accent: #d9a066;
-  --accent-foreground: #3b2a1a;
-  --destructive: #cf6b6b;
-  --destructive-foreground: #3b2a1a;
-  --border: #5a4634;
-  --input: #4b3621;
-  --ring: #d9a066;
-  --chart-1: #d9a066;
-  --chart-2: #c68f5a;
-  --chart-3: #e8c99b;
-  --chart-4: #d6c6b8;
-  --chart-5: #f5f0e6;
-  --sidebar: #4b3621;
-  --sidebar-foreground: #f5f0e6;
-  --sidebar-primary: #d9a066;
-  --sidebar-primary-foreground: #3b2a1a;
-  --sidebar-accent: #5a4634;
-  --sidebar-accent-foreground: #f5f0e6;
-  --sidebar-border: #5a4634;
-  --sidebar-ring: #d9a066;
+  --background: #2d121f;
+  --foreground: #f0ddd4;
+  --card: #3d1a2c;
+  --card-foreground: #f0ddd4;
+  --popover: #3d1a2c;
+  --popover-foreground: #f0ddd4;
+  --primary: #BB8493;
+  --primary-foreground: #2d121f;
+  --secondary: #49243E;
+  --secondary-foreground: #f0ddd4;
+  --muted: #49243E;
+  --muted-foreground: #c9a89b;
+  --accent: #704264;
+  --accent-foreground: #f0ddd4;
+  --destructive: #c97b7b;
+  --destructive-foreground: #2d121f;
+  --border: #704264;
+  --input: #3d1a2c;
+  --ring: #BB8493;
 }
 
 @theme inline {
   --font-sans: 'Lora', 'Georgia', serif;
   --font-serif: 'Cormorant Garamond', 'Georgia', serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -99,35 +74,31 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-full: var(--radius-full);
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
   }
+
   html {
     transition: background-color 0.4s ease, color 0.4s ease;
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
     transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
   }
 }
 
@@ -158,7 +129,7 @@
 /* Elegant link underlines */
 .link-literary {
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(var(--primary), var(--primary));
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 1px;
@@ -188,4 +159,23 @@
 /* Theme toggle transitions */
 .theme-transition {
   transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Custom scrollbar for literary feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
 }
