@@ -46,19 +46,22 @@ export default function AboutPage() {
             </blockquote>
 
             <p>
-              My poetry often explores themes of identity, belonging, and the quiet 
-              moments that shape our understanding of the world. I believe that the 
-              most profound truths are often found in the smallest observations—a 
-              shaft of light through a window, the weight of silence, the particular 
-              way memory reshapes our past.
+              My poetry often explores the things people struggle to say out loud—the kind 
+              of thoughts that sit quietly in your chest at 2 a.m., refusing to let you sleep. 
+              My words aren’t meant to be perfect, they’re meant to be felt. But not all of it 
+              is heavy. Sometimes, it leans toward love—the soft kind, the hopeful kind, the 
+              kind that reminds you not everything is meant to break you.that some things 
+              are meant to find you when you finally choose yourself.
             </p>
 
-            <p>
-              The thoughts section serves as a space for longer reflections. Here, 
-              I explore ideas that deserve more room to unfold, essays on art, 
-              literature, and the human experience that have been simmering in my 
-              mind.
-            </p>
+           <p>
+            The thoughts section is where I write about things that stay on my mind longer 
+            than they should—art that lingers, words that feel too personal, verses that 
+            deserve a voice, and ideas that ask for change. It holds everything that finds 
+            its way into my mind and refuses to leave—how I see the world, what I question, 
+            and what I’m still trying to understand. Nothing here is a fixed truth, it’s 
+            simply my personal opinion.
+          </p>
 
             <p>
               And then there are the books—those faithful companions that have 
