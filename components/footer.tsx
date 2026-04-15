@@ -16,7 +16,7 @@ export function Footer() {
               Sruti Nadar
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              A literary sanctuary for poetry, introspective thoughts, and book discoveries.
+              A space shaped by poems, passing thoughts, and books that leave a mark.
             </p>
           </div>
 
@@ -71,9 +71,14 @@ export function Footer() {
           <p className="text-xs text-muted-foreground">
             {currentYear} Sruti Nadar. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground italic font-serif">
-            {"\"Find what you love and let it kill you.\""}
-          </p>
+          <p className="text-sm md:text-base text-muted-foreground italic font-serif">
+  {"\"Find what you love and let it kill you.\" "}
+  <br></br>
+  <br></br>
+  <span className="text-white font-sans not-italic">
+    — Charles Bukowski
+  </span>
+</p>
         </div>
       </div>
     </footer>

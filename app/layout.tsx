@@ -21,12 +21,12 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: 'Sruti | Poetry, Thoughts & Literary Musings',
-  description: 'A literary sanctuary for poetry, introspective thoughts, and book discoveries. Words that breathe life into silence.',
+  description: 'A space shaped by poems, passing thoughts, and books that leave a mark.',
   keywords: ['poetry', 'literature', 'thoughts', 'books', 'writing', 'creative writing'],
   authors: [{ name: 'Sruti' }],
   openGraph: {
     title: 'Sruti | Poetry, Thoughts & Literary Musings',
-    description: 'A literary sanctuary for poetry, introspective thoughts, and book discoveries.',
+    description: 'A space shaped by poems, passing thoughts, and books that leave a mark.',
     type: 'website',
   },
 }

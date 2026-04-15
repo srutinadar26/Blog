@@ -43,7 +43,7 @@ export default async function ThoughtsPage() {
               Thoughts
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              Essays and reflections on life, art, and the human experience. Musings that invite contemplation.
+              Essays and reflections on life, art, and the human experience meant to be felt and allowed to settle.
             </p>
           </header>
 

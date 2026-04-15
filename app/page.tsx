@@ -57,11 +57,10 @@ export default async function HomePage() {
               Welcome to my literary sanctuary
             </p>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground mb-8 text-balance">
-              Find what you love and let it kill you
+              Choose what you love, and let the rest fall away
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12">
-              A collection of poetry, introspective musings, and literary discoveries. 
-              Where thoughts find their voice and stories find their home.
+              A space shaped by poems, passing thoughts, and books that leave a mark.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
@@ -79,11 +78,6 @@ export default async function HomePage() {
               </Link>
             </div>
           </div>
-          
-          {/* Decorative Element */}
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-            <div className="w-px h-16 bg-border" />
-          </div>
         </section>
 
         {/* Featured Sections */}
@@ -97,7 +91,7 @@ export default async function HomePage() {
                   <h2 className="font-serif text-2xl font-medium">Poetry</h2>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Verses that capture fleeting emotions, observations, and the beauty found in ordinary moments.
+                  Verses that hold fleeting emotions, personal reflections, and the beauty found in ordinary moments.
                 </p>
                 {poems.length > 0 ? (
                   <ul className="space-y-4">
@@ -138,7 +132,7 @@ export default async function HomePage() {
                   <h2 className="font-serif text-2xl font-medium">Thoughts</h2>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Reflections on life, art, and the human experience. Essays that invite contemplation.
+                  Reflections on life, art, and the human experience meant to be felt and allowed to settle.
                 </p>
                 {thoughts.length > 0 ? (
                   <ul className="space-y-4">
@@ -227,6 +221,27 @@ export default async function HomePage() {
             </cite>
           </div>
         </section>
+
+        {/* Pinterest Section */}
+<section className="py-20 px-6 bg-secondary/20">
+  <div className="max-w-3xl mx-auto text-center">
+    <h2 className="font-serif text-2xl md:text-3xl font-medium mb-4">
+      Explore More
+    </h2>
+    <p className="text-muted-foreground leading-relaxed mb-6">
+      A quiet extension of this space lives elsewhere too.  
+      It’s where I write my poems, the ones that press against me until they’re let out.
+    </p>
+    <Link
+      href="https://in.pinterest.com/codedinpoetry/"
+      target="_blank"
+      className="inline-flex items-center gap-2 text-primary text-sm font-medium link-literary"
+    >
+      Explore more poems on Pinterest
+      <ArrowRight size={14} />
+    </Link>
+  </div>
+</section>
 
         {/* CTA Section */}
         <section className="py-24 px-6 bg-primary text-primary-foreground">

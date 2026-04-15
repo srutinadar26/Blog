@@ -43,7 +43,7 @@ export default async function PoemsPage() {
               Poetry
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              Verses that capture fleeting emotions, observations, and the beauty found in ordinary moments.
+             Verses that hold fleeting emotions, personal reflections, and the beauty in everyday moments
             </p>
           </header>
 
