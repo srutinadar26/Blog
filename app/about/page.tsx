@@ -28,13 +28,13 @@ export default function AboutPage() {
           {/* Content */}
           <div className="prose-literary space-y-8 text-lg leading-relaxed">
             <p>
-              Welcome to my little corner of the internet. I&apos;m Sruti, a writer 
-              who finds solace in the rhythm of words and the spaces between them.
+              Welcome to my little corner of the internet. I&apos;m Sruti, A writer 
+              I write because some feelings only make sense once they're turned into words.
             </p>
 
             <p>
               This space was born from a simple desire: to create a sanctuary where 
-              thoughts could breathe, where poetry could find its audience, and where 
+              thoughts could breathe, where poetry could find its own voice, and where 
               the books that have moved me could be shared with kindred spirits.
             </p>
 
