@@ -46,25 +46,22 @@ export default function AboutPage() {
             </blockquote>
 
             <p>
-              My poetry often explores the things people struggle to say out loud—the kind 
+              My poetry often explores the things people struggle to say out loud the kind 
               of thoughts that sit quietly in your chest at 2 a.m., refusing to let you sleep. 
               My words aren’t meant to be perfect, they’re meant to be felt. But not all of it 
-              is heavy. Sometimes, it leans toward love—the soft kind, the hopeful kind, the 
-              kind that reminds you not everything is meant to break you.that some things 
-              are meant to find you when you finally choose yourself.
+              is heavy. Sometimes, it leans toward love the kind that reminds you not everything 
+              is meant to break you.that some things are meant to find you when you finally choose yourself.
             </p>
 
            <p>
             The thoughts section is where I write about things that stay on my mind longer 
-            than they should—art that lingers, words that feel too personal, verses that 
-            deserve a voice, and ideas that ask for change. It holds everything that finds 
-            its way into my mind and refuses to leave—how I see the world, what I question, 
-            and what I’m still trying to understand. Nothing here is a fixed truth, it’s 
-            simply my personal opinion.
+            than they should - words that feel too personal, art that lingers and ideas that ask for change 
+            and stories that delt deep. It holds everything that finds its way into my mind 
+            and refuses to leave how I see the world, what I question and what I’m still trying to understand.
           </p>
 
             <p>
-              And then there are the books—those faithful companions that have 
+              And then there are the books those faithful companions that have 
               accompanied me through seasons of change. I share my reading journey 
               here, hoping that perhaps a recommendation might lead you to your 
               next literary love.
