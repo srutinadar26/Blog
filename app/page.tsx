@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { createClient } from "@/lib/supabase/server"
-import { ArrowRight, BookOpen, Feather, Sparkles } from "lucide-react"
+import { ArrowRight, BookOpen, Feather, Sparkles, Instagram } from "lucide-react"
 
 async function getLatestContent() {
   try {
@@ -32,7 +32,6 @@ async function getLatestContent() {
       books: booksResult.data || [],
     }
   } catch (error) {
-    // Return empty arrays if Supabase is not configured
     console.warn("Supabase not configured, showing empty content:", error)
     return {
       poems: [],
@@ -52,7 +51,7 @@ export default async function HomePage() {
       <main className="flex-1 pt-20">
         {/* Hero Section */}
         <section className="relative min-h-[80vh] flex items-center justify-center px-6">
-          <div className="max-w-4xl mx-auto text-center page-transition">
+          <div className="max-w-4xl mx-auto text-center">
             <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6">
               Welcome to my literary sanctuary
             </p>
@@ -118,7 +117,7 @@ export default async function HomePage() {
                 )}
                 <Link
                   href="/poems"
-                  className="inline-flex items-center gap-2 text-primary text-sm font-medium link-literary"
+                  className="inline-flex items-center gap-2 text-primary text-sm font-medium"
                 >
                   View all poems
                   <ArrowRight size={14} />
@@ -159,7 +158,7 @@ export default async function HomePage() {
                 )}
                 <Link
                   href="/thoughts"
-                  className="inline-flex items-center gap-2 text-primary text-sm font-medium link-literary"
+                  className="inline-flex items-center gap-2 text-primary text-sm font-medium"
                 >
                   Read all thoughts
                   <ArrowRight size={14} />
@@ -200,7 +199,7 @@ export default async function HomePage() {
                 )}
                 <Link
                   href="/books"
-                  className="inline-flex items-center gap-2 text-primary text-sm font-medium link-literary"
+                  className="inline-flex items-center gap-2 text-primary text-sm font-medium"
                 >
                   Browse all books
                   <ArrowRight size={14} />
@@ -214,7 +213,7 @@ export default async function HomePage() {
         <section className="py-32 px-6">
           <div className="max-w-3xl mx-auto text-center">
             <blockquote className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed italic">
-              {`"The purpose of literature is to turn blood into ink."`}
+              "The purpose of literature is to turn blood into ink."
             </blockquote>
             <cite className="block mt-6 text-muted-foreground not-italic">
               — T.S. Eliot
@@ -223,43 +222,57 @@ export default async function HomePage() {
         </section>
 
         {/* Pinterest Section */}
-<section className="py-20 px-6 bg-secondary/20">
-  <div className="max-w-3xl mx-auto text-center">
-    <h2 className="font-serif text-2xl md:text-3xl font-medium mb-4">
-      Explore More
-    </h2>
-    <p className="text-muted-foreground leading-relaxed mb-6">
-      A quiet extension of this space lives elsewhere too.  
-      It’s where I write my poems, the ones that press against me until they’re let out.
-    </p>
-    <Link
-      href="https://in.pinterest.com/codedinpoetry/"
-      target="_blank"
-      className="inline-flex items-center gap-2 text-primary text-sm font-medium link-literary"
-    >
-      Explore more poems on Pinterest
-      <ArrowRight size={14} />
-    </Link>
-  </div>
-</section>
+        <section className="py-20 px-6 bg-secondary/20">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-serif text-2xl md:text-3xl font-medium mb-4">
+              Explore More
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              A quiet extension of this space lives elsewhere too.  
+              It's where I write my poems, the ones that press against me until they're let out.
+            </p>
+            <Link
+              href="https://in.pinterest.com/codedinpoetry/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary text-sm font-medium"
+            >
+              Explore more poems on Pinterest
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+        </section>
 
-        {/* CTA Section */}
+        {/* Contact Section */}
         <section className="py-24 px-6 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-medium mb-6">
-              Let&apos;s Connect
+              Let's Connect
             </h2>
             <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8 leading-relaxed">
               Have a thought to share, a poem that resonates, or simply want to say hello? 
-              I&apos;d love to hear from you.
+              I'd love to hear from you.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary-foreground text-primary font-medium tracking-wide uppercase text-sm hover:bg-primary-foreground/90 transition-colors rounded-sm"
-            >
-              Get in Touch
-              <ArrowRight size={16} />
-            </Link>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary-foreground text-primary font-medium tracking-wide uppercase text-sm hover:bg-primary-foreground/90 transition-colors rounded-sm"
+              >
+                Get in Touch
+                <ArrowRight size={16} />
+              </Link>
+
+              <a
+                href="https://www.instagram.com/shrutii26._/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="inline-flex items-center justify-center p-3 border border-primary-foreground rounded-full hover:bg-primary-foreground hover:text-primary transition-all duration-300"
+              >
+                <Instagram size={18} />
+              </a>
+            </div>
           </div>
         </section>
       </main>
