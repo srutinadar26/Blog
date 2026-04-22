@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { createClient } from "@/lib/supabase/server"
 import { format } from "date-fns"
 import { ArrowLeft, Star } from "lucide-react"
+import Image from "next/image"
 
 interface PageProps {
   params: Promise<{ id: string }>
@@ -20,13 +21,11 @@ async function getBook(id: string) {
       .eq("id", id)
       .single()
 
-    if (error || !data) {
-      return null
-    }
+    if (error || !data) return null
 
     return data
   } catch (error) {
-    console.warn("Supabase not configured:", error)
+    console.warn("Supabase error:", error)
     return null
   }
 }
@@ -50,35 +49,36 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  const { id } = await params
+  const { id } = await params   // ✅ FIX
+
   const book = await getBook(id)
-  
+
   if (!book) {
     return { title: "Book Not Found | Sruti" }
   }
 
   return {
     title: `${book.title} by ${book.author} | Books | Sruti`,
-    description: book.excerpt || `A book review by Sruti`,
+    description: book.excerpt || "A book review by Sruti",
   }
 }
 
 export default async function BookPage({ params }: PageProps) {
-  const { id } = await params
+  const { id } = await params   // ✅ FIX
+
   const book = await getBook(id)
 
-  if (!book) {
-    notFound()
-  }
+  if (!book) notFound()
 
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
+
       <main className="flex-1 pt-28 pb-24 px-6">
         <article className="max-w-3xl mx-auto page-transition">
-          {/* Back Link */}
-          <Link 
+
+          {/* Back */}
+          <Link
             href="/books"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12"
           >
@@ -86,23 +86,36 @@ export default async function BookPage({ params }: PageProps) {
             <span className="text-sm">Back to Books</span>
           </Link>
 
+          {/* 📸 Cover Image */}
+          <div className="relative w-full aspect-[2/3] mb-10 overflow-hidden rounded">
+  <Image
+    src={book.cover_url}
+    alt={book.title}
+    fill
+    className="object-cover"
+  />
+</div>
+
           {/* Header */}
           <header className="mb-12">
             <time className="text-sm text-muted-foreground">
               {format(new Date(book.created_at), "MMMM d, yyyy")}
             </time>
-            <h1 className="font-serif text-4xl md:text-5xl font-medium tracking-tight text-foreground mt-4 text-balance">
+
+            <h1 className="font-serif text-4xl md:text-5xl font-medium tracking-tight text-foreground mt-4">
               {book.title}
             </h1>
+
             <p className="text-xl text-muted-foreground mt-2">
               by {book.author}
             </p>
+
             <div className="mt-4">
               <StarRating rating={book.rating} />
             </div>
           </header>
 
-          {/* Review Content */}
+          {/* Review */}
           <div className="prose-literary">
             <div className="text-foreground leading-relaxed whitespace-pre-line text-lg">
               {book.review}
@@ -115,6 +128,7 @@ export default async function BookPage({ params }: PageProps) {
               — Reviewed by Sruti
             </p>
           </footer>
+
         </article>
       </main>
 
