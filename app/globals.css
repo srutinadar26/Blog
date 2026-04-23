@@ -5,50 +5,51 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  /* Premium Literary Color Palette - Rose & Plum (Darker Light Mode) */
-  --background: #E8D5C8;  /* darker warm rose - was #DBAFA0 */
-  --foreground: #2D121F;  /* deeper plum - was #3d1a2c */
-  --card: #F2E6DD;        /* slightly darker ivory - was #f5e6df */
-  --card-foreground: #2D121F;
-  --popover: #F2E6DD;
-  --popover-foreground: #2D121F;
-  --primary: #6B3A52;     /* deeper muted plum - was #704264 */
-  --primary-foreground: #F2E6DD;
-  --secondary: #A87C8A;   /* deeper dusty rose - was #BB8493 */
-  --secondary-foreground: #2D121F;
-  --muted: #DDD0C5;       /* darker muted tone - was #e8d5ce */
-  --muted-foreground: #5D3A48; /* deeper muted text - was #704264 */
-  --accent: #7D4A62;      /* deeper accent - was #8b5a6e */
-  --accent-foreground: #F2E6DD;
-  --destructive: #3D1A2C;  /* deeper destructive - was #49243E */
-  --destructive-foreground: #E8D5C8;
-  --border: #C9B5A8;       /* darker border - was #c9a89b */
-  --input: #F2E6DD;
-  --ring: #6B3A52;
+  /* Literary Color Palette — Dusty Earth Tones */
+  /* --dust-grey: #e7e1da  --bone: #d3c8bb  --khaki-beige: #bfaf9c  --camel: #ab967d  --dusty-taupe: #a1896e */
+  --background: #e7e1da;        /* dust-grey */
+  --foreground: #3a2e24;        /* deep earth — strong contrast */
+  --card: #d3c8bb;              /* bone */
+  --card-foreground: #3a2e24;
+  --popover: #d3c8bb;           /* bone */
+  --popover-foreground: #3a2e24;
+  --primary: #ab967d;           /* camel */
+  --primary-foreground: #e7e1da; /* dust-grey */
+  --secondary: #bfaf9c;         /* khaki-beige */
+  --secondary-foreground: #3a2e24;
+  --muted: #d3c8bb;             /* bone */
+  --muted-foreground: #7a6550;  /* medium earth */
+  --accent: #a1896e;            /* dusty-taupe */
+  --accent-foreground: #e7e1da; /* dust-grey */
+  --destructive: #b54a4a;
+  --destructive-foreground: #e7e1da;
+  --border: #bfaf9c;            /* khaki-beige */
+  --input: #d3c8bb;             /* bone */
+  --ring: #ab967d;              /* camel */
   --radius: 0.5rem;
   --radius-full: 9999px;
 }
 
 .dark {
-  --background: #2d121f;
-  --foreground: #f0ddd4;
-  --card: #3d1a2c;
-  --card-foreground: #f0ddd4;
-  --popover: #3d1a2c;
-  --popover-foreground: #f0ddd4;
-  --primary: #BB8493;
-  --primary-foreground: #2d121f;
-  --secondary: #49243E;
-  --secondary-foreground: #f0ddd4;
-  --muted: #49243E;
-  --muted-foreground: #c9a89b;
-  --accent: #704264;
-  --accent-foreground: #f0ddd4;
+  --background: #3a2e24;        /* deep earth */
+  --foreground: #e7e1da;        /* dust-grey */
+  --card: #4a3c30;              /* dark camel */
+  --card-foreground: #e7e1da;
+  --popover: #4a3c30;
+  --popover-foreground: #e7e1da;
+  --primary: #ab967d;           /* camel */
+  --primary-foreground: #3a2e24;
+  --secondary: #5c4a3a;         /* deep taupe */
+  --secondary-foreground: #e7e1da;
+  --muted: #5c4a3a;
+  --muted-foreground: #bfaf9c;  /* khaki-beige */
+  --accent: #a1896e;            /* dusty-taupe */
+  --accent-foreground: #e7e1da;
   --destructive: #c97b7b;
-  --destructive-foreground: #2d121f;
-  --border: #704264;
-  --input: #3d1a2c;
-  --ring: #BB8493;
+  --destructive-foreground: #3a2e24;
+  --border: #5c4a3a;
+  --input: #4a3c30;
+  --ring: #ab967d;              /* camel */
 }
 
 @theme inline {

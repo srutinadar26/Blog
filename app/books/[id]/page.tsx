@@ -87,14 +87,16 @@ export default async function BookPage({ params }: PageProps) {
           </Link>
 
           {/* 📸 Cover Image */}
-          <div className="relative w-full aspect-[2/3] mb-10 overflow-hidden rounded">
-  <Image
-    src={book.cover_url}
-    alt={book.title}
-    fill
-    className="object-cover"
-  />
-</div>
+          {book.cover_url && (
+            <div className="relative w-full aspect-[2/3] mb-10 overflow-hidden rounded">
+              <Image
+                src={book.cover_url}
+                alt={book.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+          )}
 
           {/* Header */}
           <header className="mb-12">

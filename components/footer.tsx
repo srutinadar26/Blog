@@ -75,7 +75,7 @@ export function Footer() {
   {"\"Find what you love and let it kill you.\" "}
   <br></br>
   <br></br>
-  <span className="text-white font-sans not-italic">
+  <span className="text-foreground font-sans not-italic">
     — Charles Bukowski
   </span>
 </p>

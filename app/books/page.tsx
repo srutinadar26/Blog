@@ -5,19 +5,24 @@ import { createClient } from "@/lib/supabase/server"
 import { Star } from "lucide-react"
 
 async function getBooks() {
-  const supabase = await createClient()
+  try {
+    const supabase = await createClient()
 
-  const { data, error } = await supabase
-    .from("books")
-    .select("*")
-    .order("created_at", { ascending: false })
+    const { data, error } = await supabase
+      .from("books")
+      .select("*")
+      .order("created_at", { ascending: false })
 
-  if (error) {
-    console.error(error)
+    if (error) {
+      console.error("Error fetching books:", error)
+      return []
+    }
+
+    return data || []
+  } catch (error) {
+    console.warn("Supabase not configured, showing empty books:", error)
     return []
   }
-
-  return data || []
 }
 
 function StarRating({ rating }: { rating: number }) {
