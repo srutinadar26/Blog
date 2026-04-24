@@ -1,55 +1,45 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-/* Custom variant for dark mode */
-@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   /* Literary Color Palette — Dusty Earth Tones */
   /* --dust-grey: #e7e1da  --bone: #d3c8bb  --khaki-beige: #bfaf9c  --camel: #ab967d  --dusty-taupe: #a1896e */
-  --background: #e7e1da;        /* dust-grey */
-  --foreground: #3a2e24;        /* deep earth — strong contrast */
-  --card: #d3c8bb;              /* bone */
+  --background: #e7e1da;
+  /* dust-grey */
+  --foreground: #3a2e24;
+  /* deep earth — strong contrast */
+  --card: #d3c8bb;
+  /* bone */
   --card-foreground: #3a2e24;
-  --popover: #d3c8bb;           /* bone */
+  --popover: #d3c8bb;
+  /* bone */
   --popover-foreground: #3a2e24;
-  --primary: #ab967d;           /* camel */
-  --primary-foreground: #e7e1da; /* dust-grey */
-  --secondary: #bfaf9c;         /* khaki-beige */
+  --primary: #ab967d;
+  /* camel */
+  --primary-foreground: #e7e1da;
+  /* dust-grey */
+  --secondary: #bfaf9c;
+  /* khaki-beige */
   --secondary-foreground: #3a2e24;
-  --muted: #d3c8bb;             /* bone */
-  --muted-foreground: #7a6550;  /* medium earth */
-  --accent: #a1896e;            /* dusty-taupe */
-  --accent-foreground: #e7e1da; /* dust-grey */
+  --muted: #d3c8bb;
+  /* bone */
+  --muted-foreground: #7a6550;
+  /* medium earth */
+  --accent: #a1896e;
+  /* dusty-taupe */
+  --accent-foreground: #e7e1da;
+  /* dust-grey */
   --destructive: #b54a4a;
   --destructive-foreground: #e7e1da;
-  --border: #bfaf9c;            /* khaki-beige */
-  --input: #d3c8bb;             /* bone */
-  --ring: #ab967d;              /* camel */
+  --border: #bfaf9c;
+  /* khaki-beige */
+  --input: #d3c8bb;
+  /* bone */
+  --ring: #ab967d;
+  /* camel */
   --radius: 0.5rem;
   --radius-full: 9999px;
-}
-
-.dark {
-  --background: #3a2e24;        /* deep earth */
-  --foreground: #e7e1da;        /* dust-grey */
-  --card: #4a3c30;              /* dark camel */
-  --card-foreground: #e7e1da;
-  --popover: #4a3c30;
-  --popover-foreground: #e7e1da;
-  --primary: #ab967d;           /* camel */
-  --primary-foreground: #3a2e24;
-  --secondary: #5c4a3a;         /* deep taupe */
-  --secondary-foreground: #e7e1da;
-  --muted: #5c4a3a;
-  --muted-foreground: #bfaf9c;  /* khaki-beige */
-  --accent: #a1896e;            /* dusty-taupe */
-  --accent-foreground: #e7e1da;
-  --destructive: #c97b7b;
-  --destructive-foreground: #3a2e24;
-  --border: #5c4a3a;
-  --input: #4a3c30;
-  --ring: #ab967d;              /* camel */
 }
 
 @theme inline {
@@ -151,6 +141,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

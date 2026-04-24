@@ -47,7 +47,7 @@ export default async function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
+
       <main className="flex-1 pt-20">
         {/* Hero Section */}
         <section className="relative min-h-[80vh] flex items-center justify-center px-6">
@@ -228,7 +228,7 @@ export default async function HomePage() {
               Explore More
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              A quiet extension of this space lives elsewhere too.  
+              A quiet extension of this space lives elsewhere too.
               It's where I write my poems, the ones that press against me until they're let out.
             </p>
             <Link
@@ -244,13 +244,13 @@ export default async function HomePage() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-24 px-6 bg-primary text-primary-foreground">
+        <section className="py-14 px-6 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-medium mb-6">
               Let's Connect
             </h2>
             <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Have a thought to share, a poem that resonates, or simply want to say hello? 
+              Have a thought to share, a poem that resonates, or simply want to say hello?
               I'd love to hear from you.
             </p>
 
