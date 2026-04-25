@@ -4,6 +4,8 @@ import { Footer } from "@/components/footer"
 import { createClient } from "@/lib/supabase/server"
 import { formatDistanceToNow } from "date-fns"
 
+export const dynamic = 'force-dynamic'
+
 async function getThoughts() {
   try {
     const supabase = await createClient()

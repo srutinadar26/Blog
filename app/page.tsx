@@ -4,6 +4,8 @@ import { Footer } from "@/components/footer"
 import { createClient } from "@/lib/supabase/server"
 import { ArrowRight, BookOpen, Feather, Sparkles, Instagram } from "lucide-react"
 
+export const dynamic = 'force-dynamic'
+
 async function getLatestContent() {
   try {
     const supabase = await createClient()

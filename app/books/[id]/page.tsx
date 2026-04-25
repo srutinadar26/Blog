@@ -7,6 +7,8 @@ import { format } from "date-fns"
 import { ArrowLeft, Star } from "lucide-react"
 import Image from "next/image"
 
+export const dynamic = 'force-dynamic'
+
 interface PageProps {
   params: Promise<{ id: string }>
 }

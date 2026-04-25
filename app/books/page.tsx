@@ -4,6 +4,8 @@ import { Footer } from "@/components/footer"
 import { createClient } from "@/lib/supabase/server"
 import { Star } from "lucide-react"
 
+export const dynamic = 'force-dynamic'
+
 async function getBooks() {
   try {
     const supabase = await createClient()
