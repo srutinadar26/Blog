@@ -1,14 +1,16 @@
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { createClient } from "@/lib/supabase/server"
+import { createClient } from "@/utils/supabase/server"
+import { cookies } from "next/headers"
 import { ArrowRight, BookOpen, Feather, Sparkles, Instagram } from "lucide-react"
 
 export const dynamic = 'force-dynamic'
 
 async function getLatestContent() {
   try {
-    const supabase = await createClient()
+    const cookieStore = await cookies()
+    const supabase = createClient(cookieStore)
 
     const [poemsResult, thoughtsResult, booksResult] = await Promise.all([
       supabase

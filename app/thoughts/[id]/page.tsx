@@ -2,7 +2,8 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { createClient } from "@/lib/supabase/server"
+import { createClient } from "@/utils/supabase/server"
+import { cookies } from "next/headers"
 import { format } from "date-fns"
 import { ArrowLeft } from "lucide-react"
 
@@ -14,7 +15,8 @@ interface PageProps {
 
 async function getThought(id: string) {
   try {
-    const supabase = await createClient()
+    const cookieStore = await cookies()
+    const supabase = createClient(cookieStore)
 
     const { data, error } = await supabase
       .from("thoughts")

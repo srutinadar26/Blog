@@ -7,8 +7,9 @@
  * - Both client-side and server-side usage
  */
 
-import { createClient as createServerClient } from '@/lib/supabase/server'
-import { createClient as createBrowserClient } from '@/lib/supabase/client'
+import { createClient as createServerClient } from '@/utils/supabase/server'
+import { createClient as createBrowserClient } from '@/utils/supabase/client'
+import { cookies } from 'next/headers'
 
 // Type for query results
 export interface QueryResult<T = Record<string, unknown>> {
@@ -32,7 +33,8 @@ export async function serverQuery<T = Record<string, unknown>>(
   }
 ): Promise<QueryResult<T>> {
   try {
-    const supabase = await createServerClient()
+    const cookieStore = await cookies()
+    const supabase = createServerClient(cookieStore)
     
     let query = supabase
       .from(table)
@@ -87,7 +89,8 @@ export async function testConnection(): Promise<{
   timestamp: string
 }> {
   try {
-    const supabase = await createServerClient()
+    const cookieStore = await cookies()
+    const supabase = createServerClient(cookieStore)
     
     // Test basic connectivity by querying poems table
     const { data, error } = await supabase
