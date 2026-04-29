@@ -2,7 +2,7 @@
 
 > A soft corner of the internet where words rest, breathe, and become something more
 
-🔗 **Live Site:** https://blog-g9xh.vercel.app/  
+🔗 **Live Site:** https://literary-archive.vercel.app
 💻 **Repository:** https://github.com/srutinadar26/Blog  
   
 ---
