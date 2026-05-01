@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
-import { createClient } from "@/lib/supabase/server"
+import { createClient } from "@/utils/supabase/server"
+import { cookies } from "next/headers"
 
 export async function POST(request: Request) {
   try {
@@ -22,7 +23,8 @@ export async function POST(request: Request) {
       )
     }
 
-    const supabase = await createClient()
+    const cookieStore = await cookies()
+    const supabase = createClient(cookieStore)
 
     // Insert message into database
     const { error } = await supabase
