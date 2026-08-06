@@ -47,7 +47,7 @@ export default async function PoemsPage() {
               Poetry
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-             Verses that hold fleeting emotions, personal reflections, and the beauty in everyday moments
+             This archive includes poems that are no longer accessible on my Pinterest profile due to pinterest violations.
             </p>
           </header>
 

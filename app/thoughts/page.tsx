@@ -35,7 +35,7 @@ export default async function ThoughtsPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
+
       <main className="flex-1 pt-28 pb-24 px-6">
         <div className="max-w-4xl mx-auto page-transition">
           {/* Header */}
@@ -55,7 +55,7 @@ export default async function ThoughtsPage() {
           {thoughts.length > 0 ? (
             <div className="space-y-12">
               {thoughts.map((thought) => (
-                <article 
+                <article
                   key={thought.id}
                   className="group border-b border-border/50 pb-12 last:border-0"
                 >
@@ -79,7 +79,7 @@ export default async function ThoughtsPage() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-24">
+            <div className="text-center py-20">
               <p className="font-serif text-2xl text-muted-foreground italic">
                 Thoughts coming soon...
               </p>
