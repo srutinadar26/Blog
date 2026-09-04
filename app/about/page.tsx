@@ -28,7 +28,11 @@ export default function AboutPage() {
           {/* Content */}
           <div className="prose-literary space-y-8 text-lg leading-relaxed">
             <p>
-              Welcome to my little corner of the internet. I&apos;m Sruti, A writer 
+              Welcome to my little corner of the internet. 
+              <br></br>
+              I&apos;m Sruti, A writer, A poet, and a lover of words. I write to explore the depths of human experience, 
+              to capture fleeting moments, and to give voice to emotions that often go unspoken. 
+              Writing is my way of making sense of the world, of understanding myself and of connecting with others who may feel the same way. 
               I write because some feelings only make sense once they're turned into words.
             </p>
 
@@ -46,18 +50,22 @@ export default function AboutPage() {
             </blockquote>
 
             <p>
-              My poetry often explores the things people struggle to say out loud the kind 
-              of thoughts that sit quietly in your chest at 2 a.m., refusing to let you sleep. 
-              My words aren’t meant to be perfect, they’re meant to be felt. But not all of it 
-              is heavy. Sometimes, it leans toward love the kind that reminds you not everything 
-              is meant to break you.that some things are meant to find you when you finally choose yourself.
+              I write to give a home to the things that have nowhere else to go, to gather the feelings 
+              I cannot name and turn them into something beautiful. I write to hold onto fleeting moments, 
+              to remember the versions of myself I have been, and to make art from the pieces life leaves behind. 
+              Some words help me understand, some help me heal, and some simply need to be released into the world 
+              so I can breathe a little lighter. I write for the joy of creating, for the ache of feeling deeply, 
+              for the memories worth keeping, and for the things I am finally ready to let go of. 
+              Somewhere between the words, the silences, and everything I cannot say, 
+              I am learning not just how to write, but how to feel, how to let go, and how to live.
+
             </p>
 
            <p>
-            The thoughts section is where I write about things that stay on my mind longer 
-            than they should - words that feel too personal, art that lingers and ideas that ask for change 
-            and stories that delt deep. It holds everything that finds its way into my mind 
-            and refuses to leave how I see the world, what I question and what I’m still trying to understand.
+            The thoughts section is for the things that linger, the ideas I can’t quite let go of, 
+            the stories that stay with me, and the questions I keep coming back to. 
+            A little space for what I notice, what I wonder, and everything I’m still trying to understand.
+
           </p>
 
             <p>
@@ -72,9 +80,9 @@ export default function AboutPage() {
                 Let&apos;s Connect
               </h2>
               <p className="mb-8">
-                I believe in the power of conversation and the connections we forge 
-                through shared words. If something here resonated with you, or if 
-                you simply want to say hello, I&apos;d love to hear from you.
+                If something here resonates with you, feel free to reach out. 
+                I’m always happy to hear a thought, start a conversation, or simply say hello.
+
               </p>
               <Link
                 href="/contact"
